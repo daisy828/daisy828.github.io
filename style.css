@@ -1,61 +1,123 @@
-/* in case I didn't tell you yet - use this whenever you do anything */
-* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
-
-/* 
-
-This task doesn't require setting any widths and heights so don't. 
-You will never need any pixel values other than 10px.
-Well, all the exceptions to this are already written just below (width:960px and 100px)
-
-Your job is to set some margins, paddings and floats (spoiler: and then you get in trouble :) )
-
-Oh, and you don't need any more selectors here, but you can add some if you want.
-
-DO:
-1. change the text color after you look at the HTML and the image you're reproducing
-2. uncomment the borders 
-3. do what you need to fit the outlines
-4. get in trouble with footer and solve the problem
-
-*/
-
-body{
-	/* change this to some color to see the text. ever heard of RGBA? */
-	color: white;
+body {
+    font-family: sans-serif;
+    background: #000;
+    font-size: 12px
 }
 
-div.wrapper {
-	width: 960px;
-	border: 2px dotted yellow;
-    margin: 10px auto;
-    padding: 10px;
-}
-    
-
-div.content {
-    background:turquoise;
-
-   width: 800px;
-    margin-left: 124px;
-
+.wrapper {
+    width: 1080px;
+    margin: 15px auto;
+    height: 2040px;
 }
 
-    
+.menu {
+    width: 960px;
+    margin: 0px auto;
+}
 
-div.sidebar {
-	width: 100px;
-	border: 2px dotted yellow;
+.menu>ul>li {
+    border: 3px solid yellow;
+    margin: 80px;
+    display: inline;
+    list-style-type: none;
     float: left;
+}
+
+.menu>ul>li>a {
+    display: block;
+    border: 1px solid #000;
+    padding: 20px;
+    margin: 3px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 14px;
+}
+
+.logo {
+    background: transparent url("https://66.media.tumblr.com/64c7829e257239e786de7ce4fb519b00/tumblr_n3ytiqSL3X1sg0afio1_500.gif") repeat center;
+    height: 200px;
+    width: 200px;
+    margin: 0 auto;
+    border: 2px solid yellow;
+}
+
+.content {
+    padding: 50px;
+    border: 3px solid yellow;
+    color: #ffffff;
+    word-spacing: 1px;
+    line-height: normal;
     clear: both;
-    margin: 5px;
+    padding-bottom: 50PX;
+    float: left;
+    width: auto;
+}
+
+.img {
+    display: block;
+    margin: 0 auto;
+    padding-top: 25px;
+    width: 500px;
+}
+
+.img src {
+    padding-bottom: 20px;
+}
+
+.name {
+    margin-bottom: auto;
+    font-size:20px;
+}
+
+#jieshao {
+    width: 1080px;
+    float:left;
+    padding-top: 10px;
+    padding-bottom: 20px;
     
 }
 
-
-header, footer {clear: both;
-	border: 2px dotted yellow;
+.jiugeren {
+    max-width: 60%;
+    padding-top: 100px;
     
+}
+
+.header {
+    padding-left: 10px;
+    float: right;
+    font-size: 5px;
+}
+
+.profile {
+    text-align: justify;
+    font-size: 10px;
+    padding-top: 20px;
   
-margin:5px;
+  
 }
 
+video {
+    width: 85%;
+    height: 80%;
+    padding-top: 20PX;
+}
+
+.ALBUM{
+    overflow: auto;
+    font-size: 20px;
+    color: yellow;
+    padding-top: 20px;
+}
+
+.name{
+    font-weight: 100;
+    color: yellow;
+    padding-top: 20px;
+}
+/*<h1>EXO-M</h1>*/
+a:active{
+    color:blue;
+    text-decoration: underline;
+    background-color: red;
+}
